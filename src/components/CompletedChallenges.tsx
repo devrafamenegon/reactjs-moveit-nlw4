@@ -8,7 +8,7 @@ const { challengesCompleted } = useContext(ChallengesContext);
   return (
     <div className={styles.completedChallengesContainer}>
       <span>Desafios completos</span>
-      <span>5</span>
+      <span>{challengesCompleted}</span>
     </div>
   );
 }
