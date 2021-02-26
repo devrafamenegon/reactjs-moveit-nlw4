@@ -8,10 +8,7 @@ import { CountdownProvider } from '../contexts/CountdownContext';
 
 function MyApp({ Component, pageProps }) {
   return (
-  // Envolvemos todo nosso app com o provider do ChallengeContext pois todos os componentes necessitaram dos dados dos challenges 
-    <ChallengesProvider>
         <Component {...pageProps} />
-    </ChallengesProvider>
   );
 }
 
