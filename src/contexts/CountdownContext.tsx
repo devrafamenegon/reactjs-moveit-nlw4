@@ -39,7 +39,7 @@ export function CountdownProvider({ children }) {
     clearTimeout(countdownTimeOut); //utilizamos esta variavel para cancelar a contagem do timer, pois antes, ao finalizarmos o ciclo, o setTimeOut ainda contava 1 segundo a mais
     setIsActive(false);
     setHasFinished(false);
-    setTime(0.1 * 60);
+    setTime(0.1 * 15000);
   }
 
   //eu quero executar uma função sempre que o valor de active mudar

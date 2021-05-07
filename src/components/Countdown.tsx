@@ -27,38 +27,19 @@ export function Countdown() {
 
       {/* os && permitem termos um if com apenas o then, oq teriamos q usar ?? e dps null, não é mais necessario */}
       { hasFinished ? (
-
-        <button
-          disabled
-          type="button" 
-          className={`${styles.countdownButton}`}
-        >
+        <button disabled type="button" className={`${styles.countdownButton}`}>
           Ciclo encerrado
         </button>
-
       ) : (
-
         <>
           { isActive ? (
-        
-            <button 
-              type="button" 
-              className={`${styles.countdownButton} ${styles.countdownButtonActive}`}
-              onClick={resetCountdown}
-            >
+            <button type="button" className={`${styles.countdownButton} ${styles.countdownButtonActive}`} onClick={resetCountdown}>
               Abandonar ciclo
             </button>
-
           ) : (
-
-            <button 
-              type="button" 
-              className={styles.countdownButton} 
-              onClick={startCountdown}
-            >
+            <button type="button" className={styles.countdownButton} onClick={startCountdown}>
               Iniciar um clico
             </button>
-
           )}
         </>
 
